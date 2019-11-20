@@ -425,15 +425,18 @@ li {
 /* CONTACT FORM */
 .contact {
   background-color: #221e3f;
+  width: 70%;
+  margin: 0 auto;
 }
-
+/*
 .form {
   width: 70%;
   margin: 0 auto;
 }
+*/
 
-.form label {
-  font-size: 1.5rem;
+.formLabel {
+	font-size: 1.5rem;
 }
 
 input,
@@ -443,7 +446,9 @@ textarea {
   padding: 1rem;
   margin-bottom: 5px;
   border: none;
+  border-radius: 5px;
   outline-color: #fd57bf;
+  resize: none;
 }
 
 input[type='submit'] {

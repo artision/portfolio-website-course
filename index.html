@@ -230,19 +230,19 @@
           <h6>Let's work together.</h6>
         </div>
         <form action="" data-aos="fade-up" data-aos-delay="300">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placehodler="Enter your name..." required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placehodler="Enter your email..." required>
-          <label for="service">Services</label>
+          <label for="name" class="formLabel">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+          <label for="email" class="formLabel">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+          <label for="service" class="formLabel">Services:</label>
           <select name="services" id="service">
             <option value="">Web Design</option>
             <option value="">Web Development</option>
             <option value="">Web Design/Development</option>
           </select>
-          <label for="subject">Subject:</label>
+          <label for="subject" class="formLabel">Subject:</label>
           <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-          <input type="submit" value="submit">
+          <input type="submit" value="Submit">
         </form>
       </div>
     </section>
@@ -252,7 +252,10 @@
       <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
       </div>
-      <p>&copy; 2019 Artision</p>
+      <p>&copy; <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script> Artision</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
