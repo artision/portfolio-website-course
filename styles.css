@@ -1,5 +1,5 @@
 /* GLOBAL STYLES */
-@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap");
 
 * {
   margin: 0;
@@ -9,14 +9,14 @@
 
 html {
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #eee;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background: url('images/sitebg.jpg') no-repeat center fixed;
+  background: url("images/sitebg.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ img {
 
 .section-heading h1:before,
 .section-heading h1:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
@@ -127,7 +127,7 @@ li {
 }
 
 .nav-link {
-  font-family: 'Liu Jian Mao Cao', sans-serif;
+  font-family: "Liu Jian Mao Cao", sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
@@ -145,7 +145,7 @@ li {
 }
 
 .menu-toggler {
-  position: absolute;
+  position: fixed;
   top: 5rem;
   right: 5rem;
   width: 5rem;
@@ -154,7 +154,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 1500;
+  z-index: 1000;
   transition: transform 650ms ease-out;
 }
 
@@ -204,7 +204,7 @@ li {
 
 .landing-text h1 {
   font-size: 20rem;
-  font-family: 'Liu Jian Mao Cao', sans-serif;
+  font-family: "Liu Jian Mao Cao", sans-serif;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,6 +223,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
 }
 
 .about-heading {
@@ -412,7 +413,7 @@ li {
 }
 
 .timeline .date::after {
-  content: '';
+  content: "";
   box-shadow: 0 0 0 04px #fd57bf;
   border-radius: 100%;
   left: -8rem;
@@ -426,7 +427,7 @@ li {
 .contact {
   background-color: #221e3f;
   width: 70%;
-  margin: 0 auto;
+  margin: -7rem auto auto auto;
 }
 /*
 .form {
@@ -436,7 +437,7 @@ li {
 */
 
 .formLabel {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 input,
@@ -451,7 +452,7 @@ textarea {
   resize: none;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   width: initial;
   background-color: #fd57bf;
   color: #eee;
@@ -461,7 +462,7 @@ input[type='submit'] {
   transition: background-color 650ms;
 }
 
-input[type='submit']:hover {
+input[type="submit"]:hover {
   color: #221e3f;
   background-color: #ffe838;
 }
@@ -483,7 +484,7 @@ input[type='submit']:hover {
   background-color: #eee;
   top: -2.5rem;
   right: 5rem;
-  border-radius: 100%;
+  border-radius: 45%;
   display: flex;
   animation: pulse 2s infinite;
   cursor: pointer;
@@ -517,7 +518,7 @@ input[type='submit']:hover {
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   body {
-    background: url('images/sitebg2.jpg') no-repeat center fixed;
+    background: url("images/sitebg2.jpg") no-repeat center fixed;
     background-size: cover;
   }
 
